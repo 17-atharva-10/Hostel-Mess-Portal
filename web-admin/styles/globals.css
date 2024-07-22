@@ -1,0 +1,410 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300,400;500,600;700&display=swap");
+/* Footer */
+footerBody {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+/* Announcement form */
+announcement-body {
+  font-family: "Poppins", sans-serif !important;
+}
+
+
+/* theme toggler */
+.icon-container {
+  position: fixed;
+  right: 20px;
+  top: 17px;
+  /* right: 20px; */
+}
+
+/* blur navbar */
+/* .navbar{
+  /* background: transparent; */
+  /* margin-left: 10px; */
+  /* margin-right: 10px; */
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  /* backdrop-filter: blur(3px); */
+/* }  */
+
+
+
+
+
+
+
+/* Dashboard Cards  */
+.messmenuwrapper {
+  margin: 0 auto;
+}
+
+.messmenucards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.messmenucards li {
+  /* border: 2px solid #490A3D; */
+  border-radius:5px;
+  background-color: white;
+  color:'black';
+  flex: 1 1 200px;
+}
+
+.messmenucards h2 {
+  background-color: #490A3D; 
+  margin: 0;
+  padding: 10px;
+}
+
+.messmenucards p {
+  padding: 5px;
+}
+
+.messmenuflex {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: 0 -10px; */
+}
+
+.messmenuflex li {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.messmenugrid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  /*grid-template-columns: repeat(auto-fill, minmax(200px 1fr));*/
+  grid-gap: 20px;
+}
+
+
+/* Announcement Form  */
+.announcementform {
+  margin:0 auto;
+  text-align: center;
+  
+}
+.announcementform input, .announcementform textarea {
+  border: 0;
+  outline: 0;
+  padding: 1em;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+  margin-top: 1em;
+  font-family: 'Merriweather', sans-serif;
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  resize: none;
+}
+.announcementform input:focus, .announcementform textarea:focus {
+  -moz-box-shadow: 0 0px 2px #e74c3c !important;
+  -webkit-box-shadow: 0 0px 2px #e74c3c !important;
+  box-shadow: 0 0px 2px #e74c3c !important;
+}
+.announcementform #input-submit {
+  color: white;
+  background: #e74c3c;
+  cursor: pointer;
+}
+.announcementform #input-submit:hover {
+  -moz-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+  -webkit-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+  box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+}
+.announcementform textarea {
+  height: 126px;
+}
+
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+
+.right {
+  width: 50%;
+}
+
+.left {
+  margin-right: 2%;
+}
+
+@media (max-width: 480px) {
+  .half {
+    width: 100%;
+    float: none;
+    margin-bottom: 0;
+  }
+}
+/* Clearfix */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/* Select tag in verification page  */
+
+:root {
+  --background-gradient: linear-gradient(30deg, #f39c12 30%, #f1c40f);
+  --gray: #34495e;
+  --darkgray: #2c3e50;
+}
+
+.verificationselect {
+  /* Reset Select */
+  appearance: none;
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  /* Personalize */
+  flex: 1;
+  padding: 0 1em;
+  color: #fff;
+  background-color: var(--darkgray);
+  background-image: none;
+  cursor: pointer;
+}
+/* Remove IE arrow */
+.verificationselect::-ms-expand {
+  display: none;
+}
+/* Custom Select wrapper */
+.verificationselect {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  border-radius: .25em;
+  overflow: hidden;
+}
+/* Arrow */
+.verificationselect::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  background-color: #34495e;
+  transition: .25s all ease;
+  pointer-events: none;
+}
+/* Transition */
+.verificationselect:hover::after {
+  color: #f39c12;
+}
+
+/* Other styles*/
+
+
+
+/* Login Page Admin */
+/* -----------------------------------comment out */
+
+/* .container {
+  width: 400px;
+  margin: auto;
+  padding: 36px 48px 48px 48px;
+  background-color: #f2efee;
+  align-items: center;
+
+  border-radius: 11px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+}
+
+.login-title {
+  padding: 15px;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.login-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 16px;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 1.2rem;
+  border-radius: 9px;
+  border: none;
+}
+
+.login-form input:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(253, 242, 233, 0.5);
+}
+
+.btn--form {
+  background-color: #1f1d1d;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 8px;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 9px;
+  border: none;
+
+  cursor: pointer;
+  font-family: inherit;
+
+  transition: all 0.3s;
+}
+
+button {
+  outline: 1px solid #383535;
+}
+
+.btn--form:hover {
+  background-color: #fdf2e9;
+  color: #292727;
+} */
+
+
+/* -----------------------------new login added------------- */
+
+/* .homepageImage {
+  background-image: url("/images/homepage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+} */
+
+.homepageImage {
+  background-image: url("/images/homepage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.dark .homepageImage {
+  background-image: url("/images/homepageDark.png");
+}
+
+
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 840px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
